@@ -17,6 +17,21 @@ type
 /screen 
 to your bot to get an screenshot of your desktop
 
+## Configuration
+Create a configuration file named TelegramBotSettings.txt in the same directory as the script. The file should have the following format:
+
+BotToken: YOUR_TELEGRAM_BOT_TOKEN
+ChatID: YOUR_CHAT_ID
+ExcludedFiles: file1.txt, file2.txt
+Worker: YourWorkerName
+MonitoringStillActiveMsg: 10
+
+-BotToken: Your Telegram bot token obtained from the BotFather.
+-ChatID: The chat ID where the bot will send messages. You can use your own chat ID or a group chat ID.
+-ExcludedFiles: A comma-separated list of file names that should be ignored by the bot when created.
+-Worker: The name of the worker that will be used in messages.
+-MonitoringStillActiveMsg: The interval (in seconds) for sending periodic monitoring messages
+
 ## Prerequisites
 
 Before running the script, ensure you have the following installed:
